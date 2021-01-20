@@ -76,12 +76,12 @@ interface CaptchaObj {
 	 * the captcha text,
 	 * store this in your session
 	 */
-	text: string,
+	text: string;
 	/**
 	 * the svg image in string,
 	 * set type of image/svg before send to client side
 	 */
-	data: string
+	data: string;
 }
 /**
  * This method returns a object that has two props:
@@ -105,7 +105,7 @@ export function createMathExpr(options?: ConfigObject): CaptchaObj;
  * Override the default font with your own
  * @param {string} url
  */
-export function loadFont(url: string): void;
+export function loadFont(url: string): Promise<unknown>;
 /**
  * captcha generation global setting
  */
