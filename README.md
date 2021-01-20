@@ -13,7 +13,7 @@ step1: Store Comismsh.ttf under the Fonts directory under the project under your
 step2: write code
 
 ```Javascript
-let svgCaptcha from 'svg-captcha-browser'
+import svgCaptcha from 'svg-captcha-browser'
 svgCaptcha.loadFont('http://yourhosts.com/fonts/Comismsh.ttf').then(() => {
 	let captcha = svgCaptcha.create();
 	console.log(captcha);
